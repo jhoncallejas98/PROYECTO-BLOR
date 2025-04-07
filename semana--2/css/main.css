@@ -1,0 +1,416 @@
+/** SE REALIZO FIRST MOBILE IPHONE 14 Y MEDIAQ 768>*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /** Colors */
+    --Coral-Reef: #fe7e6b;
+    --Jacarta: #3a3d5d;
+    --Dark-Gunmetal: #25242c;
+    /** Fonts */
+    --overall-fontsize: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--overall-fontsize);           /** 16px * 0.625 = 10px  Conversion en base 10*/
+}
+
+
+body {
+    font-size: 1.4rem;          /** 14px; */
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.main-container {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/** Header */
+.header {
+    background-color: var(--Coral-Reef);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 8rem;
+    height: 8rem;
+    padding: 1rem;
+}
+
+.logo-site {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.navbar__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-hamburguer {
+    color: white;
+    font-size: 2.4rem;
+}
+
+.navbar__right {
+    display: none;
+}
+
+.menu-main {
+    display: none;
+}
+
+.menu-authentication {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-authentication .item-3 {
+    display: none;
+}
+
+.btn {
+    border: 1px solid yellow;
+    padding: .6rem 1.2rem;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: white;
+    border: 1px solid white;
+    color: var(--Coral-Reef);
+}
+
+.btn-outline-primary {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid transparent;
+    color: white;
+}
+
+/** Main */
+.main {
+    flex-grow: 1;
+}
+
+/** Main: Section Call to Action */
+.section-call-to-action {
+    background: var(--Coral-Reef);
+    display: flex;
+    height: 44rem;
+    border-radius: 0 0 0 12rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    margin: 4rem 0;
+}
+
+/** Main: Section Designed for the Future */
+.content-designed-for-the-future {
+    margin: 9rem 0;
+    padding-bottom: 38px;
+}
+
+.img-designed-for-the-future {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.content-designed-for-the-future p {
+    /* color: blue; */
+    text-align: left;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+}
+
+.section-2 {
+    /* border: 1px solid; */
+    width: 84%;
+    margin: 0 auto;
+}
+
+@media ( min-width: 567px ) {}
+@media ( min-width: 768px ) {
+    .content-designed-for-the-future {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+ /** state of the art  */
+ .bg-jacarta {
+    background: var(--Jacarta);
+    height: 60rem;
+    border-radius: 0 93px;
+}
+.content-state-of-the-art{
+    display: flex;
+    flex-direction: column;
+    margin: 22rem 0 0 0;
+    color: white;
+}
+.image-state-of-the-art {
+    width: 100%;
+    position: relative;
+    bottom: 22rem;
+}
+
+.content-state-of-the-art .section-2 {
+    position: relative; 
+    bottom: 18.5rem;
+    line-height: 2.9rem;
+
+}
+
+.content-state-of-the-art h2 {
+    font-size: 26;
+    font-weight: 400;
+}
+
+ /** section free open etc */
+
+.content-free-open-simple .section-1 {
+    justify-self: center;
+    margin-top: 4rem;
+}
+.img-free-open-simple {
+    width: 100%;
+}
+
+.content-free-open-simple h2 {
+    font-size: 26px;
+    font-weight: 500;
+
+}
+.content-free-open-simple p {
+    font-weight: 400;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+
+/** Footer */
+.footer {
+    background-color: var(--Dark-Gunmetal);
+    border-radius: 0 100px 0 0;
+    margin-top: 7rem;
+    color: white;
+}
+
+.container-footer {
+    /* border: 2px dotted blue; */
+    max-width: 96vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 .8rem;
+}
+.container-fluid {
+    /* border: 2px dotted orange; */
+    max-width: 100vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.logo-footer {
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.order-list ul {
+    list-style: none;
+    padding: 0;
+    line-height: 3;
+    margin-top: 6rem;
+}
+
+
+
+/** Media Queries */
+@media ( min-width: 567px ) {
+    .container {
+        max-width: 56rem;
+        padding: 0 1.6rem;
+    }
+    .content-state-of-the-art .section-2 {
+        position: relative;
+        bottom: 28.5rem;
+        line-height: 2.9rem;
+    }
+}
+@media ( min-width: 768px ) {
+    .container {
+        max-width: 72rem;
+        padding: 0 2.4rem;
+    }
+    /** Header */
+    .navbar__left {
+        flex-basis: 15rem;
+    }
+    .navbar__center {
+        flex-grow: 1;
+    }
+    .navbar__right {
+        display: block;
+        flex-basis: 15rem;
+    }
+    .menu-main {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+    .icon-hamburguer {
+        display: none;
+    }    
+    /** Main: Section Designed for the Future */
+    .content-designed-for-the-future {
+        flex-direction: row-reverse;
+    }
+    .section-designed-for-the-future .section-1,
+    .section-designed-for-the-future .section-2 {
+        flex: 1;
+    }
+
+    .section-designed-for-the-future .section-1 {
+        position: relative;
+        right: -115px;
+    }
+    .img-designed-for-the-future {
+        width: 100%;
+        max-width: 600px; /* o lo que necesites */
+        margin-bottom: 8rem;
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+    .image-state-of-the-art {
+        width: 100%;
+        bottom: 5rem;
+    }
+    .content-state-of-the-art {
+        display: flex;
+        flex-direction: row; 
+        margin: 9rem 0 0 0;
+        color: white;
+    }
+    .bg-jacarta {
+        background: var(--Jacarta);
+        height: 26rem;
+        border-radius: 0 93px;
+    }
+    .content-state-of-the-art .section-2 {
+        position: relative;
+        /* bottom: 18.5rem; */
+        line-height: 2.9rem;
+        text-align: center;
+        align-content: center;
+        bottom: 5rem;
+        padding-right: 2rem;
+    }
+
+    .content-free-open-simple {
+        display: flex;
+        box-sizing: border-box;
+        padding-top: 16rem;
+    }
+
+    .content-free-open-simple .section-2 {
+        text-align: justify;
+        align-content: center;
+        margin-right: 3rem;
+    }
+    .container-footer {
+        display: flex; 
+        gap: 11rem;
+    }
+}
+@media ( min-width: 992px ) {
+    .container {
+        max-width: 98rem;
+        padding: 0 3.2rem;
+    }
+    .img-designed-for-the-future {
+        width: 100%;
+        max-width: 600px; /* o lo que necesites */
+        margin-bottom: 8rem;
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+    .img-designed-for-the-future {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 8rem;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        right: 160px;
+    }
+}
+@media ( min-width: 1200px ) {
+    .container {
+        max-width: 114rem;
+        padding: 0 4rem;
+    }
+    .container-footer {
+        display: flex; 
+        gap: 31rem;
+    }
+    .content-state-of-the-art .section-2 {
+        bottom: 11rem;
+    }
+    .section-designed-for-the-future .section-1 {
+        position: relative;
+        right: -204px;
+    }
+}
+
+@media ( min-width: 1440px ) {
+    .img-designed-for-the-future {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 8rem;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        right: 71px;
+    }
+}
